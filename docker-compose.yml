@@ -2,9 +2,15 @@ version: '3.2'
 services:
 
   helloworld-db-postgres:
-    image: "registry.k8.wildwidewest.xyz/repository/docker-repository/helloworld-db:${tag}"
-    build: .
+    image: "registry.k8.wildwidewest.xyz/repository/docker-repository/helloworld-db-postgres:${tag}"
+    build:
+      dockerfile: Dockerfile-postgres
+      context: .
+    ports:
+      - 5432:5432
 
   helloworld-db:
     image: "registry.k8.wildwidewest.xyz/repository/docker-repository/helloworld-db:${tag}"
     build: .
+    depends_on:
+      - helloworld-db-postgres
