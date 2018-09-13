@@ -36,3 +36,8 @@ dependencies {
 
     compile('org.springframework.boot:spring-boot-starter')
 }
+
+
+plugins {
+    id "org.flywaydb.flyway" version "5.1.4"
+}
