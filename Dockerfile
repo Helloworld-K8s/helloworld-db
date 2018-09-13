@@ -1,4 +1,4 @@
-FROM java:8
+FROM openjdk:10-jdk
 
 MAINTAINER mehdi.elkouhen@softeam.fr
 
