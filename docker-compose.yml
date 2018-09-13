@@ -1,0 +1,6 @@
+version: '3.2'
+services:
+
+  helloworld-db:
+    image: "registry.k8.wildwidewest.xyz/repository/docker-repository/helloworld-db:${tag}"
+    build: .
