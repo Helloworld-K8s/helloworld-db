@@ -4,6 +4,10 @@ public class MessageDTO {
 
     private int id;
     private String body;
+    private String language;
+
+    public MessageDTO() {
+    }
 
     public MessageDTO(int i, String body) {
         this.id = i;
@@ -26,5 +30,11 @@ public class MessageDTO {
         this.body = body;
     }
 
+    public String getLanguage() {
+        return language;
+    }
 
+    public void setLanguage(String language) {
+        this.language = language;
+    }
 }
