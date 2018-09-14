@@ -9,9 +9,10 @@ public class MessageDTO {
     public MessageDTO() {
     }
 
-    public MessageDTO(int i, String body) {
-        this.id = i;
+    public MessageDTO(int id, String language, String body) {
+        this.id = id;
         this.body = body;
+        this.language = language;
     }
 
     public int getId() {

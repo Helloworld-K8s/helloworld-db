@@ -18,7 +18,7 @@ public class HelloResource {
         this.messageDAO = messageDAO;
     }
 
-    @GetMapping(path = "/hello")
+    @GetMapping(path = "/helloworld")
     Collection<MessageDTO> findAll() {
         return messageDAO.findAll();
     }
