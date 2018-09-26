@@ -4,7 +4,7 @@ MAINTAINER mehdi.elkouhen@softeam.fr
 
 WORKDIR /apps/helloworld-db
 
-COPY build/libs/helloworld-db.jar /apps/helloworld-db/helloworld-db.jar
+COPY build/libs/helloworld-db-*.jar /apps/helloworld-db/helloworld-db.jar
 
 EXPOSE 8080
 
